@@ -1,0 +1,427 @@
+/*   FONTS LINKS   */
+
+/* mulish-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/mulish-v10-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v10-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* mulish-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/mulish-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v10-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* mulish-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/mulish-v10-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v10-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*   SECTIONS   */
+body, header, footer, section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header>div,footer>div,section>div{
+    width: 1080px;
+}
+
+
+/*   HEADER   */
+header img{
+    width: 30px;
+}
+
+header ul{
+    list-style: none;
+}
+
+header li {
+    margin-left: 15px;
+}
+
+/*   SLIDER   */
+.slider>:nth-child(2){
+    width: 100%;
+}
+
+.slider-select>div{
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-select>div:hover>hr{
+    transition: 0.1s;
+    height: 5px;
+    opacity: 1;
+}
+
+.slider-select .slider-selected{
+    opacity: 1;
+    height: 5px;
+}
+
+.slider hr{
+    width: 40px;
+    height: 3px;
+    color:#DF5000;
+}
+
+/*   COLORS   */
+
+.bg-black{
+    background-color: #0A0A0A;
+}
+
+.bg-light-grey{
+    background-color: #F8F8F8;
+}
+
+.bg-grey{
+    background-color: #ECECEC;
+}
+
+.bg-orange{
+    background-color: #EE7E3F;
+}
+
+.bg-red{
+    background-color: #EE3F3F;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.orange{
+    color:#DF5000;
+}
+
+.white{
+    color: white;
+}
+
+/*   TEXT STYLES   */
+
+.t-size-small {
+    font-size: 12px;
+}
+
+.t-size-regular{
+    font-size: 18px;
+}
+
+.t-size-large{
+    font-size: 24px;
+}
+
+.t-price{
+    font-size: 28px;
+}
+
+.t-size-button{
+    font-size: 16px;
+}
+
+
+.t-up-case{
+    text-transform: uppercase;
+}
+
+.t-big{
+    font-weight: 500;
+}
+
+.t-normal{
+    font-weight: 400;
+}
+
+.t-light{
+    font-weight: 300;
+}
+
+.t-lined{
+    text-decoration-line: line-through;
+}
+
+/*   LINK STYLES   */
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+header a, header a:visited{
+    color: white;
+}
+
+header a:hover, header a:visited:hover{
+    transition: 0.1s;
+    color: #ffad7e;
+}
+
+
+/*   LINES HR   */
+
+.solid{
+    width: 100%;
+    height: 1px;
+    color: #DF5000;
+    opacity: 1;
+}
+
+.dash{
+    width: 100%;
+    color: white;
+    border: 1px dashed #DF5000;
+    opacity: 0.5;
+}
+
+
+/*   BUTTONS   */
+
+button{
+    border: 0;
+    border-radius: 2px;
+}
+
+.b-red{
+    background-color:#EE3F3F;
+    width: 60px;
+    height: 40px;
+}
+
+.b-red:hover{
+    cursor: pointer;
+}
+
+.b-yellow{
+    background-color: #EE7E3F;
+    width: 48px;
+    height: 40px;
+}
+
+.b-yellow:hover{
+    background-color: #d4601c;
+    cursor: pointer;
+}
+
+/*   CATALOG BLOCK   */
+
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.catalog>div{
+    height: 115px;
+}
+
+.catalog-block a>img{
+    height: 110px;
+    width: 230px;
+    object-fit: cover;
+}
+
+.catalog-block>:nth-child(1){
+    width: 640px;
+}
+
+.catalog-block>:nth-child(2){
+    width: 400px;
+}
+
+.catalog-block>.b-yellow{
+    margin-left: 10px;
+}
+
+.catalog hr{
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 100%;
+    border: 0.5px solid gray; 
+}
+
+.catalog>div:hover{
+    transition: 0.1s;
+    background-color: #f0f0f0;
+}
+.catalog>div:hover hr{
+    transition: 0.2s;
+    border: 1px solid #d4601c;
+}
+
+.prices-position{
+    position: relative;
+    top: 10px;
+}
+
+
+/*   CATALOG PAGE   */
+
+.genre-list{
+    list-style: none;
+    margin: 5px 0 0 20px;
+    padding: 0;
+}
+
+.filter input{
+    margin: 0 5px;
+    border: 0;
+    width: 100px;
+    text-align: right;
+}
+
+
+.filter-catalog hr{
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 100%;
+    border: 0.5px solid gray; 
+}
+
+.filter-catalog{
+    width: 100%;
+}
+
+.filter-catalog>div{
+    width: 100%;
+}
+
+
+/*   GAME PAGE   */
+
+.game-title>:nth-child(2){
+    width: 440px;
+}
+
+.sale-duration{
+    color: #DF500094;
+}
+
+.game-buy{
+    position: relative;
+    top: 35px;
+}
+
+.game-buy .b-yellow{
+    width: 125px;
+}
+
+p{
+    text-indent: 10px;
+    margin: 0;
+}
+
+.hidden-logo{
+    display: none;
+}
+
+.filter-catalog>div:hover{
+    transition: 0.1s;
+    background-color: #f0f0f0;
+}
+.filter-catalog>div:hover hr{
+    transition: 0.2s;
+    border: 1px solid #d4601c;
+}
+
+
+.cat-img{
+    width: 230px;
+    object-fit: cover;
+}
+
+.item .cart{
+    width: 25px;
+    height: 25px;
+}
+
+.ml-a{
+    margin-left: auto;
+}
+
+.mr-a{
+    margin-right: auto;
+}
+section{
+    width: 100%;
+}
+
+.sliderImgs{
+    overflow: hidden;
+    background-color: black;
+}
+
+.choose-req>span{
+    cursor: pointer;
+}
+
+.choose-req>span:hover{
+    color: #d4601c;
+}
+
+.fade-out{
+    transition: 0.4s;
+    opacity: 0.2;
+}
+
+.fade-in{
+    transition: 0.4s;
+    opacity: 1;
+}
+
+/*   MAIN-MOBILE   */
+
+@media(max-width: 1180px){
+    body>*>div, body>div{
+        width: 780px;
+    }
+}
+@media(max-width: 768px){
+    body>*>div, body>div{
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+}
+@media(max-width: 425px){
+    .item img{
+        width: 100%;
+    }
+}
